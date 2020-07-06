@@ -9,7 +9,7 @@ describe("Read file and encoding", () => {
   });
 
   it("Should encode a file", async () => {
-    const testFile = path.join(__dirname, "./assets/input.wav");
+    const testFile = path.join(__dirname, "./assets/input_48000.wav");
     const opusData = await encode(testFile);
 
     assert.equal(opusData.length > 0, true);
